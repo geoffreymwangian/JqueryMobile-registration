@@ -1,0 +1,53 @@
+a:link{
+	text-decoration:none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+img{
+width:30%;
+height:auto;
+margin:auto;	
+}
+.img_caption{
+	color:#010101;
+	text-align:center;
+	
+	}
+	.indexbtn{
+		text-align:center;
+		
+		}
+
+.termcond_left{
+	width:40%;
+	margin:auto;
+	float:left;
+	}
+.termcond_left ui-slider{
+	margin:auto;
+	}
+	
+.termcond_right{
+	width:59%;
+	float:right;
+	}
+
+.requestinfo_left{
+	width:65%;
+	padding:10px;	display:inline-block;
+
+	float:left;
+	}
+.requestinfo_right{
+	margin:auto;
+	width:28%;
+	overflow:hidden;
+	display:inline-block;
+	float:right;	
+}
+
+
+#indexpage .firstpage {
+	background-image: url(../../images/logofirst.jpeg);
+	background-repeat: no-repeat;
+
+}

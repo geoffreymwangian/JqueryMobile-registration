@@ -1,0 +1,349 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Msa County</title>
+<link rel="stylesheet" href="custom/css/style.css" type="text/css" />
+<link href="jquery-mobile/jquery.mobile.theme-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script>
+
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div data-role="page" id="indexpage" data-theme="c">
+  <div data-role="header" data-theme="e">
+  </div>
+  
+  <div data-role="content" class="indexcontent">
+       <div data-role="navbar" data-grid="d">
+
+    <div class="ui-grid-a">
+      <div class="ui-block-a">
+               <a href="#schoolpage" data-transition="pop" ><img src="images/startpagepics/schools.png" alt="schools"  /> <div class="img_caption">Schools </div></a>
+      </div>
+      
+      <div class="ui-block-b">
+         <a href="#loginpage" data-rel="dialog"  ><img src="images/startpagepics/login2.png" alt="Login Page" /> <div class="img_caption">Login</div></a>
+      </div>
+      
+      <div class="ui-block-a">
+        <a href="#aboutpage" data-rel="dialog"><img src="images/startpagepics/about.png" alt="aboutpage" /> <div class="img_caption"> About </div></a>
+      </div>
+      <div class="ui-block-b ">
+       <a href="#createacount" data-rel="dialog" data-close-btn="none" ><img src="images/startpagepics/create account.jpg" alt="create account" /> <div class="img_caption">Signup </div></a>
+       </div>
+
+    </div>
+  	<div class="ui-footer" data-position="fixed"></div>
+  </div>
+  
+</div> <!--Page ends here-->
+
+<div data-role="page" id="schoolpage" data-theme="b">
+   
+   <div data-role="header" data-theme="e" data-position="fixed">
+  <a href="#indexpage"  data-role="button" data-icon="back"  data-iconpos="notext">Back</a>
+    <h1> Schools </h1>
+   </div>
+  <div data-role="content" >
+  
+    <ul data-role="listview" data-inset="true" data-filter="true" data-theme="e" data-placeholder="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" id="schools_list" data-filter-placeholder="Select school" >
+    
+    </ul> <!-- Schools list ends here-->
+
+			 
+  </div>
+ 
+</div><!-- School Page ends here-->
+
+<div data-role="page" id="schoolinfopage" data-theme="e">
+  <div data-role="header" data-theme="e" data-position="fixed">
+  <a href="#schoolpage" class="back_to_schoolsbtn" data-role="button" data-icon="back" data-iconpos="notext" >Back</a>
+  
+    <h1 id="headerschoolinfo"></h1>
+   </div>
+  <div data-role="content">
+  <div id="new"></div>
+  <br>
+  
+  <ul data-role="listview" data-inset="true" data-theme="c">
+        <li>
+          <h3>SCHOOL NAME:</h3>
+          <i><b><p id="new_schoolinfo_name"></p></b></i>
+        </li>
+        <li>
+          <h3>SCHOOL CATEGORY:</h3>
+          <i><p id="new_schoolinfo_page"></p></i>
+        </li>
+        <li>
+          <h3>LOCATED AT</h3>
+          <i><p id="schoolinfo_location"></p></i>
+        </li>
+        <li data-theme="b"  data-icon="info">
+        <a href="#"><h3 style="text-align:center;">View on Google Map</h3></a>
+            
+        </li>
+  </ul>
+  
+  </div>
+  
+  <div data-role="footer" data-theme="e" data-position="fixed">
+    <nav data-role="navbar">
+    	<ul>
+            <li><a href="#schoolperformance" data-icon="refresh" data-iconpos="top">Performance</a></li>
+            <li><a href="#schooladm" data-icon="grid" data-iconpos="top">Admision</a></li>
+             <li><a href="#requestmoreinfo_page" data-icon="grid" data-iconpos="top">Request</a></li>
+        </ul>
+    	
+    </nav>
+  </div>
+</div><!--Page ends here-->
+
+<div data-role="page" id="schoolperformance" data-theme="e"><!--- K.c.s.e Performance -->
+  <div data-role="header" data-theme="b" data-position="fixed">
+ 	<a href="#schoolpage" class="back_to_schoolsbtn" data-role="button" data-icon="back" data-iconpos="notext" >
+         Back </a>
+    <h1>K.C.S.E Results</h1>
+  </div>
+  <div data-role="content">
+  
+	<ul data-role="listview" data-inset="true" data-theme="e"  class="ui-listview ui-listview-inset ui-corner-all ui-shadow" id="resyults_content">
+		
+	</ul>
+  </div>
+  <div data-role="footer" data-theme="e" data-position="fixed">
+    <nav data-role="navbar">
+    	<ul>
+        	<li><a href="#schoolinfopage" data-icon="info" data-iconpos="top">Information</a></li>
+            <li><a href="#schooladm" data-icon="grid" data-iconpos="top">Admision</a></li>
+            <li><a href="#requestmoreinfo_page" data-icon="grid" data-iconpos="top">Request</a></li>
+        </ul>
+    </nav>
+  </div>
+</div><!--school performance Page ends here-->
+
+<div data-role="page" id="specific_result">
+  <div data-role="header" data-position="fixed" data-theme="e">
+  <a href="#schoolperformance" data-role="button" data-icon="back" data-rel="back" data-iconpos="notext">
+        Bac</a>
+        
+    <h1>2016 KCSE Results</h1>
+  </div>
+  <div data-role="content">Content</div>
+  
+</div><!---->
+
+
+<div data-role="page" id="schooladm" data-theme="e">
+
+  <div data-role="header" data-theme="e" data-position="fixed">
+       <a href="#schoolpage" class="back_to_schoolsbtn" data-role="button" data-icon="back" data-iconpos="notext">
+        Back</a>
+        
+        <h1>Admission Requirements</h1>
+        
+        <a href="#" data-role="button" data-icon="gear" data-iconpos="notext" data-rel="back">Back</a>
+  </div>
+  <div data-role="content">
+  
+  	<div id="newadmreq"> </div>
+  </div>
+  <div data-role="footer" data-theme="e" data-position="fixed">
+    <nav data-role="navbar">
+    	<ul>
+        	<li><a href="#schoolinfopage" data-icon="info" data-iconpos="top">Information</a></li>
+            <li><a href="#schoolperformance" data-icon="refresh" data-iconpos="top">Performance</a></li>
+           <li><a href="#requestmoreinfo_page" data-icon="grid" data-iconpos="top">Request</a></li>
+        </ul>
+    	
+    </nav>
+  </div>
+</div><!--schooladm Page ends here-->
+
+	<!--XXX REQUEST MORE INFORMATION PAGE XXXX-->
+<div data-role="page" id="requestmoreinfo_page" data-theme="e">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <a href="#schoolpage" class="back_to_schoolsbtn" data-role="button" data-icon="back" data-iconpos="notext">
+        Back</a>
+        
+    <h1>Request info</h1>
+  </div>
+  <div data-role="content">
+   <div data-role="fieldcontain">
+   <div class="requestinfo_left">
+          <label for="requestmessage" class="ui-hidden-accessible"></label>
+         <textarea cols="40" rows="8" name="requestmessage" id="textarea2" placeholder="Enter message "></textarea>
+  
+     </div>
+     <div class="requestinfo_right">
+           <a href="#" data-role="button" data-inline="true" data-theme="b">Send</a>
+        </div>
+        </div>
+   
+        
+  </div>
+  <div data-role="footer" data-theme="e" data-position="fixed">
+  <nav data-role="navbar">
+    	<ul>
+        	<li><a href="#schoolinfopage" data-icon="info" data-iconpos="top">Information</a></li>
+            <li><a href="#schoolperformance" data-icon="refresh" data-iconpos="top">Performance</a></li>
+           <li><a href="#schooladm" data-icon="grid" data-iconpos="top">Admision</a></li>
+        </ul>
+    	
+    </nav>
+    
+  </div>
+</div>
+
+	<!--XXX LOGIN PAGE XXXX-->
+<div data-role="page" id="loginpage" data-theme="e" data-close-btn="none">
+  <div data-role="header" data-theme="e">
+   <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+    <h1><strong>Login</strong></h1>
+    
+  </div>
+  <div data-role="content">
+  <form id="login_form" method="post" action="testgi.php">
+        <div data-role="fieldcontain">
+          <label for="username" class="ui-hidden-accessible"> </label>
+          <input type="text" name="username" id="username_login" value="" placeholder="Enter username" />
+  	    </div>
+        
+        <div data-role="fieldcontain">
+          <label for="passwordinput" class="ui-hidden-accessible"></label>
+          <input type="password" name="passwordinput" id="password_login" value="" placeholder="Enter password" />
+          <div class="error_psd_login"></div>
+        </div>
+      
+  <a href="#" rel="external" data-role="button" data-icon="check" data-iconpos="right" id="loginbtn" data-theme="b">Login </a>
+ <hr>
+ <a href="#passwordreset" data-rel="dialog" style="text-align:center;" > Cant access your account ?</a>
+ </form>
+  </div>
+  <div data-role="popup" id="mwangian" data-position-to="#password_login" data-dismissible = "false">
+  	
+    <div data-role="content" >
+   <h3> <div id="failedmessage" style="color:#F31A1E" >
+    Failed </div></h3>
+   <div id="pop_up_message">Did you enter the right credentials?</div>
+<a href="#" data-role="button" data-theme="b" data-rel="back">Try-again</a>
+</div>
+</div>
+</div><!--Login Page ends here-->
+
+<div data-role="page" id="passwordreset" data-theme="e" data-close-btn="none">
+  <div data-role="header" data-theme="e">
+  <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+    <h1>Password Reset</h1>
+  </div>
+  <div data-role="content">
+  
+  <i>Enter your registered email address and the password reset instructions will be sent there</i>
+    <div data-role="fieldcontain">
+      <label for="textinput2"><strong>Email :</strong></label>
+      <input type="email" name="textinput2" id="textinput2" value="" placeholder="Enter Email Address"/>
+    </div>
+    
+    <a href="#" data-role="button" data-theme="b" data-icon="arrow-r">Reset password</a>
+    
+  </div>
+</div><!--Reset Account Page ends here-->
+
+
+<div data-role="page" data-theme="e" id="aboutpage" data-close-btn="none">
+   
+	<div data-role="header" data-theme="e">
+     <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+    	<h1>About</h1>
+    </div>
+    <div data-role="content"> <strong>This appication shows secondary schools in mombasa county and their
+    </strong>
+      <ul data-role="listview" data-inset="true" data-theme="c">
+ 
+        <li data-icon="grid"> KCSE performances</li>
+        <li data-icon="star">Admission</li>
+         <li data-icon="info">Location details</li>
+      </ul>
+. </div>
+	
+</div><!--About page ends here-->
+
+<div data-role="page" data-theme="e" id="createacount" data-close-btn="none" data-dialog="true">
+	<div data-role="header" data-theme="e">
+    <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+    	<h1>Create account</h1>
+    </div>
+    <div data-role="content">
+     <i>All the fields are required</i>
+    <form method="post" action="#" id="reg_form">
+    	 <div data-role="fieldcontain">
+          <div data-role="fieldcontain">
+            <label for="username" class="ui-hidden-accessible"><strong>Username</strong></label>
+            <input type="text" name="username" id="username_field" value="" placeholder="Enter the username" required/> 
+          </div>
+          <div data-role="fieldcontain">
+            <label for="email" class="ui-hidden-accessible">Email</label>
+            <input type="email" name="email" id="email" value="" placeholder="Enter your email" required />
+          </div>
+          
+      	<div data-role="fieldcontain">
+        <label for="email_confirm" class="ui-hidden-accessible"></label>
+        <input type="email" name="email_confirm" id="email_confirm" value="" placeholder="Confirm the email" required/>
+      	</div>
+     <div data-role="fieldcontain" data-theme="b">
+     	 <fieldset>
+          <div class="termcond_left">
+                <label>
+                    <input type="checkbox" name="checkbox-0 " required>
+                </label>
+            </div>
+            <div class="termcond_right">
+                I have read and understood <a href="#terms_cond" data-rel="dialog">terms and conditions</a>
+            </div>
+        </fieldset>
+      </div>
+      <div id="clear-fix"></div><br> 
+      <input type="submit" value="register" data-theme="b" data-icon="arrow-r" data-iconpos="right">
+      </div>
+      
+      </form>
+       </div>
+    <div data-role="footer" data-theme="e">
+    </div>
+	
+</div><!--Create account ends here-->
+
+
+<div data-role="page" id="successifulreg" data-close-btn="none" data-theme="e">
+<div data-role="header" data-theme="e"><h1>Success</h1></div>
+  <div data-role="content">
+ 
+  <strong>Successifully Registered!</strong>
+  <br><br>You need to activate your account by clicking the link sent to your email.
+  Thank you
+  	<a href="#indexpage" data-role="button" data-theme="c" >OK</a>
+  </div>
+</div> <!--Successifully registered-->
+
+<div data-role="page" id="terms_cond" data-close-btn="none" data-theme="e">
+   <div data-role="header" data-theme="e">
+    <h1>Terms</h1>
+   </div>
+  <div data-role="content">
+    <ol data-role="listview" data-inset="true" data-theme="c">
+      <li>Everyone should have only one a/c</li>
+      <li>bla bla bla</li>
+      <li>new new new</li>
+    </ol>
+  	<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="check">I have Understood</a>
+  </div>
+</div> <!--Successifully registered-->
+
+<script src="custom/scripts/start.js"></script>
+
+</body>
+</html>

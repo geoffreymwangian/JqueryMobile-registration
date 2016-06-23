@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Msa County</title>
+<link rel="stylesheet" href="custom/css/style.css" type="text/css" />
+<link href="jquery-mobile/jquery.mobile.theme-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script>
+
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+  
+ <div data-role="page" id="adm">
+  <div data-role="header" data-position="fixed" data-theme="e">
+    <h1>Schools</h1>
+    <a href="#popupMenu_adm_1" data-rel="popup" data-role="button" data-transition="flip" data-icon="gear" data-theme="e" data-iconpos="notext" class="ui-btn-right">A.</a>
+    
+  </div>
+  <div data-role="content">
+	<div id ="adm_content">
+    <a href="#" id="admin_add_school_btn" data-role="button" data-transition="pop" data-icon="plus" data-iconpos="left" data-theme="b" data-inline="true">Add School</a><br><br>
+    <ul data-role="listview" data-inset="true" data-split-icon="gear" data-filter="true" data-filter-theme="e" data-filter-placeholder="Select school">
+      <li><a href="#">
+        <h3>Khamis secondary school</h3>
+      </a><a href="#">Default</a></li>
+       <li><a href="#">
+        <h3>Mwamburi Secondary School</h3>
+      </a><a href="#">Default</a></li>
+       <li><a href="#">
+        <h3>Mama ngina girls</h3>
+      </a><a href="#">Default</a></li>
+       <li><a href="#">
+        <h3>Technical sheikh hee</h3>
+      </a><a href="#">Default</a></li>
+      
+    </ul>
+  
+    	
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="e">
+     <nav data-role="navbar">
+    	<ul>
+            <li><a href="#admin_users"  id = "admusers" data-icon="star" data-iconpos="top">Users</a></li>
+            <li><a href="#admin_account" data-icon="star" data-iconpos="top" >Account</a></li>
+        </ul>
+    	
+    </nav>
+  </div>
+    <div data-role="popup" id="popupMenu_adm_1" data-theme="d">
+        <ul data-role="listview" data-inset="true"  data-theme="d">
+            <li data-role="divider" data-theme="e">Go to:</li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+</div>
+</div>
+
+		
+<script src="custom/scripts/admin.js"></script>
+
+</body>
+</html>

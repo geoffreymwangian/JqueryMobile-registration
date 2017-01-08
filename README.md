@@ -1,1 +1,1 @@
-# jquerymobile-school-app
+# Jquery mobile application
